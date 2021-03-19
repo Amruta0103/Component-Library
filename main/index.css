@@ -1,0 +1,437 @@
+:root{
+  --item-col: rgb(255, 192, 159);
+}
+.body-main{
+  text-align: center;
+}
+.all-comp-inside{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.avatar-img-1{
+  margin:1rem;
+  height:40px;
+  width:40px;
+  border: 1px solid white;
+  border-radius: 60%;
+  padding:1rem;
+  background-color: var(--item-col);
+}
+.avatar-img-2{
+  margin:1rem;
+  height:60px;
+  width:60px;
+  border: 1px solid white;
+  border-radius: 60%;
+  padding:1rem;
+  background-color: var(--item-col);
+}
+.avatar-img-3{
+  margin:1rem;
+  height:80px;
+  width:80px;
+  border: 1px solid white;
+  border-radius: 60%;
+  padding:1rem;
+  background-color: var(--item-col);
+}
+.avatar-img-4{
+  margin:1rem;
+  height:100px;
+  width:100px;
+  border: 1px solid white;
+  border-radius: 60%;
+  padding:1rem;
+  background-color: var(--item-col);
+}
+.alert-1{
+  margin: auto;
+  width:fit-content;
+  padding: 1rem 3rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  background-color: var(--item-col);
+  vertical-align: middle;
+}
+.alert-2{
+  margin: auto;
+  width:fit-content;
+  padding: 1rem 3rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  background-color: green;
+  color: white;
+}
+.alert-3{
+  margin: auto;
+  width:fit-content;
+  padding: 1rem 3rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  background-color: red;
+  color: white;
+}
+.all-buttons{
+  justify-content: space-evenly;
+}
+.btn{
+  margin: 1rem;
+  color:black;
+  background-color: var(--item-col);
+  border: 5px solid var(--item-col);
+  border-radius: 0.5rem;
+  height:50px;
+  width:100px;
+  box-shadow: 4px 4px rgb(0,0,0,0.3);
+}
+.secondary-btn{
+  background-color: white;
+}
+.icon-btn{
+  height:60px;
+  width:60px;
+}
+.icon-btn-icon{
+  height:30px;
+  width:30px;
+  margin:auto;
+}
+.float-btn-div{
+  position: sticky;
+  bottom: 1rem;
+}
+.float-btn{
+  text-align:center;
+  position: fixed;
+  right: 1rem;
+  bottom:1rem;
+  color:black;
+  background-color: var(--item-col);
+  border: 1px solid white;
+  font-size: x-large;
+  border-radius: 50%;
+  height:50px;
+  width:50px;
+}
+.badge-div{
+  position:relative;
+  display: flex;
+  margin:auto;
+  padding:0.5rem;
+  width: fit-content;
+  height: fit-content;
+  vertical-align: middle;
+}
+.badge-on-icon{
+  height:20px;
+  width:20px;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  right:0.1rem;
+  top:0.1rem;
+}
+.badge-icon-img{
+  background-color: var(--item-col);
+  margin:auto auto auto auto;
+  padding:0.5rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  height:40px;
+  width:40px;
+  align-items: center;
+}
+.badge-on-avatar{
+  height:20px;
+  width:20px;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  right:0.5rem;
+  top:0.5rem;
+}
+.badge-avatar-img{
+  height:80px;
+  width:80px;
+  border: 1px solid white;
+  border-radius: 60%;
+  background-color: var(--item-col);
+}
+.badge-1{
+  background-color: rgb(255, 166, 93);
+}
+.badge-2{
+  background-color: green;
+}
+.badge-3{
+  background-color: red;
+}
+.card-spaces{
+  margin: 1rem;
+  align-content: center;
+}
+.card-div{
+  margin:auto;
+  height:350px;
+  width:250px;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  background-color: var(--item-col);
+  position:relative;
+  text-align: center;
+  align-items: center;
+}
+.card-title{
+  font-size: x-large;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  text-decoration: overline underline;
+}
+.card-imgholder{
+  /* border: 1px solid white; */
+  border-radius: 0.5rem;
+  margin: 0.3rem;
+  padding: 0px;
+  min-height: 190px;
+  min-width: 240px;
+}
+.card-badge{
+  position:absolute;
+  right: 0rem;
+  top: 1rem;
+  width:100px;
+  height:20px;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+  color: white;
+  background-color: rgb(255, 60, 82);
+  box-shadow: 0px 3px rgb(255, 60, 82,0.7);
+}
+.card-dismiss{
+  border: 1px solid white;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+.on-card-dismiss{
+  visibility:hidden;
+  position:absolute;
+  left: -3rem;
+  top: 1.5rem;
+  border: 1px solid black;
+  border-radius: 3rem;
+  width: 120px;
+  color: white;
+  background-color: var(--item-col);
+}
+.card-dismiss .on-card-dismiss{
+  visibility: visible;
+}
+.card-txtovrl{
+  border: 1px solid white;
+  text-align: center;
+  margin: 1rem;
+  position: absolute;
+  top: 1rem;
+}
+.card-text{
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: left;
+  font-size: larger;
+}
+.card-text-btn{
+  margin: 1rem auto 1rem 0.5rem;
+  color:black;
+  background-color: var(--item-col);
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  height:30px;
+  width:80px;
+  box-shadow: 5px 5px rgb(0,0,0,0.5);
+}
+.card-horizontal{
+  height: 200px;
+  width: 350px;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  margin: auto auto 0.5rem auto;
+  background-color: var(--item-col);
+}
+.card-shadow{
+  margin: auto;
+  height:350px;
+  width:250px;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  background-color: var(--item-col);
+  box-shadow: 7px 7px rgb(0 ,0 ,0 ,0.7);
+}
+/* the class below is just for this page's layout to put images in one row.*/
+.img-resp1{
+  margin: 1rem;
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.img-resp2{
+  margin: 1rem;
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+.img-resp3{
+  margin: 1rem;
+  border: 1px solid black;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+}
+.img-resp4{
+  margin: 1rem;
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+}
+.img-round1{
+  margin: 1rem;
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.img-round2{
+  margin: 1rem;
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.img-round3{
+  margin: 1rem;
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.img-round4{
+  margin: 1rem;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.box-input{
+  height:25px;
+  width: 250px;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-radius: 0.5rem; 
+}
+.box-input:hover{
+  border-left: 1px solid var(--item-col);
+  border-top: 1px solid var(--item-col);
+  border-right: 5px solid var(--item-col);
+  border-bottom: 5px solid var(--item-col);
+}
+.box-textarea{
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-radius: 0.5rem; 
+}
+.box-textarea:hover{
+  border-left: 1px solid var(--item-col);
+  border-top: 1px solid var(--item-col);
+  border-right: 5px solid var(--item-col);
+  border-bottom: 5px solid var(--item-col);
+}
+.list-spaced{
+  margin:auto;
+  padding:3rem;
+  list-style: none;
+  width:fit-content;
+  /* padding-inline-start: 0px; */
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  background-color: var(--item-col);
+}
+.list-spaced-item{
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  background-color: var(--bgcol);
+  margin: 10px;
+}
+.list-stacked{
+  margin:auto;
+  padding:3rem;
+  list-style: none;
+  width: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* padding-inline-start: 0px; */
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  background-color: var(--item-col);
+}
+.list-stacked-item{
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  background-color: var(--bgcol);
+  margin-left: 10px;
+  margin-right:10px;
+}
+.modal{
+  background-color: var(--item-col);
+  height: 350px;
+  width:300px;
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.modal-close{
+  border: 1px solid white;
+  margin: auto;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+.modal-list{
+  list-style: none;
+  padding-inline-start: 0px;
+  border: 1px solid white;
+  margin: 2rem 1rem 2rem 1rem;
+  height: 300px;
+  justify-content: space-between;
+}
+.modal-list-item{
+  padding:1rem;
+  margin: 1rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+}
+.all-text-box{
+  background-color: var(--item-col);
+}
+.text-h1{
+  font-size: 1.8em;
+}
+.text-small{
+  font-size: 0.8em;
+}
+.text-grey{
+  color: grey;
+}
+.text-center{
+  text-align: center;
+}
