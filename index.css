@@ -34,7 +34,7 @@
   text-align: center;
   /* background-color: var(--jet); */
   background-color: var(--silver);
-  color: whitesmoke;
+  /* color: whitesmoke; */
   color: var(--dark-liver);
 }
 .all-comp-inside{
