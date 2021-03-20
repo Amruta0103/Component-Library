@@ -1,8 +1,41 @@
-:root{
+/* :root{
   --item-col: rgb(255, 192, 159);
+  --white: #ffffffff;
+  
+  --star-command-blue: #1481baff;
+
+  --red-crayola: rgb(248,79,107);
+  --deep-champagne: #edcf8e;
+  --trial-1: #f5853f;
+} */
+/* :root{
+  --atomic-tangerine: #ffa570;
+  --cerulean-frost: #5998c5ff;
+  --aero-blue: #cfffe5ff;
+  --middle-purple: #d782baff;
+  --charleston-green: #212529ff;
+
+  --magic-mint: #adffd3;
+  --paradise-pink: #ea526f;
+  --ultra-red: #ed6e85;
+} */
+:root{
+  --jet: #353535ff;
+  --dark-liver: #534d56ff;
+  --silver: #c6c5b9ff;
+  --granny-smith-apple: #b6fbb1ff;
+  --beau-blue: #bdd4e7ff;
+  --iris: #3d52d5ff;
+  --royal-blue-light: #5869da;
+  --violet-blue-crayola: #6878DE;
+  --melon: #ffa69eff;
 }
 .body-main{
   text-align: center;
+  /* background-color: var(--jet); */
+  background-color: var(--silver);
+  color: whitesmoke;
+  color: var(--dark-liver);
 }
 .all-comp-inside{
   display: flex;
@@ -16,7 +49,7 @@
   border: 1px solid white;
   border-radius: 60%;
   padding:1rem;
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
 }
 .avatar-img-2{
   margin:1rem;
@@ -25,7 +58,7 @@
   border: 1px solid white;
   border-radius: 60%;
   padding:1rem;
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
 }
 .avatar-img-3{
   margin:1rem;
@@ -34,7 +67,7 @@
   border: 1px solid white;
   border-radius: 60%;
   padding:1rem;
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
 }
 .avatar-img-4{
   margin:1rem;
@@ -43,34 +76,22 @@
   border: 1px solid white;
   border-radius: 60%;
   padding:1rem;
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
 }
-.alert-1{
+.alert{
   margin: auto;
   width:fit-content;
   padding: 1rem 3rem;
   border: 1px solid white;
   border-radius: 0.5rem;
-  background-color: var(--item-col);
-  vertical-align: middle;
 }
-.alert-2{
-  margin: auto;
-  width:fit-content;
-  padding: 1rem 3rem;
-  border: 1px solid white;
-  border-radius: 0.5rem;
-  background-color: green;
-  color: white;
+.alert-success{
+  background-color: var(--granny-smith-apple);
+  color: green;
 }
-.alert-3{
-  margin: auto;
-  width:fit-content;
-  padding: 1rem 3rem;
-  border: 1px solid white;
-  border-radius: 0.5rem;
-  background-color: red;
-  color: white;
+.alert-fail{
+  background-color: var(--melon);
+  color: red;
 }
 .all-buttons{
   justify-content: space-evenly;
@@ -78,8 +99,8 @@
 .btn{
   margin: 1rem;
   color:black;
-  background-color: var(--item-col);
-  border: 5px solid var(--item-col);
+  background-color: var(--violet-blue-crayola);
+  border: 5px solid var(--violet-blue-crayola);
   border-radius: 0.5rem;
   height:50px;
   width:100px;
@@ -107,7 +128,7 @@
   right: 1rem;
   bottom:1rem;
   color:black;
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
   border: 1px solid white;
   font-size: x-large;
   border-radius: 50%;
@@ -133,7 +154,7 @@
   top:0.1rem;
 }
 .badge-icon-img{
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
   margin:auto auto auto auto;
   padding:0.5rem;
   border: 1px solid white;
@@ -156,7 +177,7 @@
   width:80px;
   border: 1px solid white;
   border-radius: 60%;
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
 }
 .badge-1{
   background-color: rgb(255, 166, 93);
@@ -177,7 +198,7 @@
   width:250px;
   border: 1px solid white;
   border-radius: 0.5rem;
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
   position:relative;
   text-align: center;
   align-items: center;
@@ -221,13 +242,13 @@
   position:absolute;
   left: -3rem;
   top: 1.5rem;
-  border: 1px solid black;
+  border: 1px solid whitesmoke;
   border-radius: 3rem;
   width: 120px;
   color: white;
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
 }
-.card-dismiss .on-card-dismiss{
+.card-dismiss:hover .on-card-dismiss{
   visibility: visible;
 }
 .card-txtovrl{
@@ -246,7 +267,7 @@
 .card-text-btn{
   margin: 1rem auto 1rem 0.5rem;
   color:black;
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
   border: 1px solid white;
   border-radius: 0.5rem;
   height:30px;
@@ -259,7 +280,7 @@
   border: 1px solid white;
   border-radius: 0.5rem;
   margin: auto auto 0.5rem auto;
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
 }
 .card-shadow{
   margin: auto;
@@ -267,65 +288,51 @@
   width:250px;
   border: 1px solid white;
   border-radius: 0.5rem;
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
   box-shadow: 7px 7px rgb(0 ,0 ,0 ,0.7);
 }
 /* the class below is just for this page's layout to put images in one row.*/
-.img-resp1{
-  margin: 1rem;
+.img-resp{
+  margin: 2rem;
   border: 1px solid black;
+  cursor: pointer;
+}
+.resp1{
   height: 50px;
   width: 50px;
-  cursor: pointer;
 }
-.img-resp2{
-  margin: 1rem;
-  border: 1px solid black;
+.resp2{
   height: 100px;
   width: 100px;
-  cursor: pointer;
 }
-.img-resp3{
-  margin: 1rem;
-  border: 1px solid black;
+.resp3{
   height: 150px;
   width: 150px;
-  cursor: pointer;
 }
-.img-resp4{
-  margin: 1rem;
-  border: 1px solid black;
+.resp4{
   height: 200px;
   width: 200px;
-  cursor: pointer;
 }
-.img-round1{
+.img-round{
   margin: 1rem;
-  height: 200px;
-  width: 200px;
   border: 1px solid black;
   border-radius: 50%;
 }
-.img-round2{
-  margin: 1rem;
-  height: 150px;
-  width: 150px;
-  border: 1px solid black;
-  border-radius: 50%;
-}
-.img-round3{
-  margin: 1rem;
-  height: 100px;
-  width: 100px;
-  border: 1px solid black;
-  border-radius: 50%;
-}
-.img-round4{
-  margin: 1rem;
+.round1{
   height: 50px;
   width: 50px;
-  border: 1px solid black;
-  border-radius: 50%;
+}
+.round2{
+  height: 100px;
+  width: 100px
+}
+.round3{
+  height: 150px;
+  width: 150px;
+}
+.round4{
+  height: 200px;
+  width: 200px;
 }
 .box-input{
   height:25px;
@@ -337,10 +344,10 @@
   border-radius: 0.5rem; 
 }
 .box-input:hover{
-  border-left: 1px solid var(--item-col);
-  border-top: 1px solid var(--item-col);
-  border-right: 5px solid var(--item-col);
-  border-bottom: 5px solid var(--item-col);
+  border-left: 1px solid var(--violet-blue-crayola);
+  border-top: 1px solid var(--violet-blue-crayola);
+  border-right: 5px solid var(--violet-blue-crayola);
+  border-bottom: 5px solid var(--violet-blue-crayola);
 }
 .box-textarea{
   border-right: 5px solid black;
@@ -350,10 +357,10 @@
   border-radius: 0.5rem; 
 }
 .box-textarea:hover{
-  border-left: 1px solid var(--item-col);
-  border-top: 1px solid var(--item-col);
-  border-right: 5px solid var(--item-col);
-  border-bottom: 5px solid var(--item-col);
+  border-left: 1px solid var(--violet-blue-crayola);
+  border-top: 1px solid var(--violet-blue-crayola);
+  border-right: 5px solid var(--violet-blue-crayola);
+  border-bottom: 5px solid var(--violet-blue-crayola);
 }
 .list-spaced{
   margin:auto;
@@ -363,7 +370,7 @@
   /* padding-inline-start: 0px; */
   border: 1px solid white;
   border-radius: 0.5rem;
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
 }
 .list-spaced-item{
   border: 1px solid white;
@@ -381,7 +388,7 @@
   /* padding-inline-start: 0px; */
   border: 1px solid white;
   border-radius: 0.5rem;
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
 }
 .list-stacked-item{
   border: 1px solid white;
@@ -391,7 +398,7 @@
   margin-right:10px;
 }
 .modal{
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
   height: 350px;
   width:300px;
   margin: auto;
@@ -421,7 +428,7 @@
   border-radius: 0.5rem;
 }
 .all-text-box{
-  background-color: var(--item-col);
+  background-color: var(--violet-blue-crayola);
 }
 .text-h1{
   font-size: 1.8em;
@@ -430,7 +437,7 @@
   font-size: 0.8em;
 }
 .text-grey{
-  color: grey;
+  color: rgb(124, 124, 124);
 }
 .text-center{
   text-align: center;
