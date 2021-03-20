@@ -32,10 +32,10 @@
 }
 .body-main{
   text-align: center;
-  /* background-color: var(--jet); */
-  background-color: var(--silver);
+  background-color: var(--jet);
+  /* background-color: var(--silver); */
   /* color: whitesmoke; */
-  color: var(--dark-liver);
+  color: var(--silver);
 }
 .all-comp-inside{
   display: flex;
