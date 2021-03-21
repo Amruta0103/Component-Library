@@ -31,15 +31,34 @@
   --melon: #ffa69eff;
 }
 .body-main{
-  text-align: center;
+  text-align: left;
   background-color: var(--jet);
   /* background-color: ; */
   color: var(--silver);
+  /* justify-content: left; */
 }
 .all-comp-inside{
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+.float-btn-div{
+  position: sticky;
+  bottom: 1rem;
+}
+.float-btn{
+  text-align:center;
+  position: fixed;
+  right: 1rem;
+  bottom:1rem;
+  color:black;
+  background-color: var(--violet-blue-crayola);
+  border: 2px solid white;
+  font-size: x-large;
+  border-radius: 50%;
+  height:50px;
+  width:50px;
 }
 .avatar-img-1{
   margin:1rem;
@@ -78,9 +97,10 @@
   background-color: var(--violet-blue-crayola);
 }
 .alert{
-  margin: auto;
-  width:fit-content;
-  padding: 1rem 3rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  height: fit-content;
+  text-align: center;
   border: 1px solid white;
   border-radius: 0.5rem;
 }
@@ -120,23 +140,6 @@
   height:30px;
   width:30px;
   margin:auto;
-}
-.float-btn-div{
-  position: sticky;
-  bottom: 1rem;
-}
-.float-btn{
-  text-align:center;
-  position: fixed;
-  right: 1rem;
-  bottom:1rem;
-  color:black;
-  background-color: var(--violet-blue-crayola);
-  border: 1px solid white;
-  font-size: x-large;
-  border-radius: 50%;
-  height:50px;
-  width:50px;
 }
 .badge-div{
   position:relative;
@@ -192,19 +195,18 @@
   background-color: red;
 }
 .card-spaces{
-  margin: 1rem;
-  align-content: center;
+  margin: 0.3rem;
+  justify-content: space-around;
 }
 .card-div{
-  margin:auto;
-  height:350px;
-  width:250px;
+  margin: 0.5rem;
+  height: 300px;
+  width: 200px;
   border: 1px solid white;
   border-radius: 0.5rem;
   background-color: var(--violet-blue-crayola);
   position:relative;
   text-align: center;
-  align-items: center;
 }
 .card-title{
   font-size: x-large;
@@ -212,13 +214,10 @@
   margin: 0.5rem;
   text-decoration: overline underline;
 }
-.card-imgholder{
-  /* border: 1px solid white; */
-  border-radius: 0.5rem;
-  margin: 0.3rem;
-  padding: 0px;
-  min-height: 190px;
-  min-width: 240px;
+.card-img{
+  margin: 0.5rem; 
+  height: auto;
+  width: 180px;
 }
 .card-badge{
   position:absolute;
@@ -234,6 +233,7 @@
 }
 .card-dismiss{
   border: 1px solid white;
+  color: black;
   width: 15px;
   height: 15px;
   position: absolute;
@@ -254,13 +254,21 @@
 .card-dismiss:hover .on-card-dismiss{
   visibility: visible;
 }
-.card-txtovrl{
-  border: 1px solid white;
+.card-overlay-img{
+  margin: 0.5rem;
+  opacity: 60%;
+  height: 280px;
+  width: 180px;
+}
+.card-overlay-text{
+  color: white;
+  text-decoration: double;
   text-align: center;
   margin: 1rem;
   position: absolute;
   top: 1rem;
 }
+
 .card-text{
   margin: 0.5rem;
   padding: 0.5rem;
@@ -277,22 +285,25 @@
   width:80px;
   box-shadow: 5px 5px rgb(0,0,0,0.5);
 }
-.card-horizontal{
-  height: 200px;
-  width: 350px;
-  border: 1px solid white;
-  border-radius: 0.5rem;
-  margin: auto auto 0.5rem auto;
-  background-color: var(--violet-blue-crayola);
-}
 .card-shadow{
-  margin: auto;
-  height:350px;
-  width:250px;
+  height:300px;
+  width:200px;
   border: 1px solid white;
   border-radius: 0.5rem;
   background-color: var(--violet-blue-crayola);
   box-shadow: 7px 7px rgb(0 ,0 ,0 ,0.7);
+  margin: 0.5rem;
+  position:relative;
+  text-align: center;
+}
+.card-horizontal{
+  height: 200px;
+  width: 300px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  margin: auto auto 0.5rem auto;
+  background-color: var(--violet-blue-crayola);
 }
 /* the class below is just for this page's layout to put images in one row.*/
 .img-resp{
@@ -374,15 +385,17 @@
   background-color: var(--violet-blue-crayola);
   height: 350px;
   width:300px;
-  margin: auto;
+  text-align: center;
+  margin: 1rem;
   border: 1px solid white;
   border-radius: 0.5rem;
   position: relative;
 }
 .modal-menu-position{
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
+  height: auto;
+  width: auto;
+  margin: 1rem auto;
+  padding: auto;
 }
 .modal-icon{
   height: 30px;
@@ -390,13 +403,15 @@
   color:whitesmoke;
 }
 .modal-list{
-  /* position: absolute; */
   visibility: hidden;
   list-style: none;
   padding: 1rem;
   border: 1px solid white;
-  margin: 5rem 1rem 2rem 1rem;
+  margin: 2rem;
   justify-content: space-between;
+}
+.modal-menu-position:hover .modal-list{
+  visibility: visible;
 }
 .modal-list-item{
   padding: 0.5rem;
@@ -404,10 +419,6 @@
   border: 1px solid white;
   border-radius: 0.5rem;
 }
-.modal-icon.fas.fa-bars:hover .modal-list{
-  visibility:visible;
-}
-
 .all-text-box{
   background-color: var(--violet-blue-crayola);
 }

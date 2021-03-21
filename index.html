@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Component Library By Amruta_D</title>
-  <script src="https://kit.fontawesome.com/fdb15b0584.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/index.css">
 </head>
 <body class="body-main">
   <!-- jcpicker , pichon -->
+  <div class="float-btn-div"><button class="float-btn">+</button></div>
   <h1>Avatar</h1>
   <div class="all-comp-inside">
     <div>
@@ -55,7 +55,6 @@
       <button class="btn icon-btn" ><img class="icon-btn-icon" src="/icon-btn/home.svg"></img></button>
     </div>
   </div>
-  <div class="float-btn-div"><button class="float-btn">+</button></div>
   <hr>
   <h1>Badge</h1>
   <div>
@@ -92,56 +91,44 @@
   <h1>Cards</h1>
   <div class="all-comp-inside">
     <div class="card-spaces">
-      <div class="card-title">Card with Badge</div>
+      <div class="card-title">Card w/ Badge</div>
       <div class="card-div">
-      <div class="card-imgholder">
-        <a href="https://placeholder.com/240x190">
-          <img src="https://via.placeholder.com/240x190"></img>
-        </a>
-      </div>
-      <div class="card-badge">NEW</div>
+        <img class="card-img" src="/temp-image/temp-img.svg"></img>        
+        <div class="card-badge">NEW</div>
       </div>
     </div>
     <div class="card-spaces">
-      <div class="card-title">Card with Dismiss</div>
+      <div class="card-title">Card w/ Dismiss</div>
       <div class="card-div">
-        <div class="card-imgholder">
-          <a href="https://placeholder.com">
-            <img src="https://via.placeholder.com/240x190"></img>
-          </a>
+        <div>
+          <img class="card-img" src="/temp-image/temp-img.svg"></img>          
         </div>
         <div class="card-dismiss">X<span class="on-card-dismiss">I'M not active currently</span></div>
       </div>
     </div>
     <div class="card-spaces">
-      <div class="card-title">Card with Text overlay</div>
+      <div class="card-title">Card w/ Text overlay</div>
       <div class="card-div">
-        <div class="card-imgholder">
-          <a href="https://placeholder.com/240x190">
-            <img src="https://via.placeholder.com/240x190"></img>
-          </a>
-          <div class="card-txtovrl">
-            <h4>HEY , HELLO OUT THERE!!</h4>
-            <br>
-            <h3>TEXT TEXT TEXT</h3>
-          </div>
+        <img class="card-overlay-img" src="/temp-image/temp-img2.svg"></img>
+        <div class="card-overlay-text">
+          <h3>HEY , HELLO OUT THERE!!</h4>
+          <br>
+          <h2>TEXT TEXT TEXT</h3>
         </div>
       </div>
     </div>
     <div class="card-spaces">
-      <div class="card-title">Card with Text</div>
+      <div class="card-title">Card w/ Text</div>
       <div class="card-div">
         <div class="card-text">
           <h3>TITLE</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ad voluptas eius inventore ratione vero reprehenderit.
-          Lorem ipsum dolor adipisicing elit.
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ad voluptas eius inventore ratione vero reprehenderit.</p>
         <button class="card-text-btn">primary</button>
         </div>
       </div>
     </div>
     <div class="card-spaces">
-      <div class="card-title">Card with Shadow</div>
+      <div class="card-title">Card w/ Shadow</div>
       <div class="card-shadow"></div>
     </div>
     <div class="card-spaces">
@@ -206,8 +193,8 @@
     </div>
   </div>
   <hr>
-  <div>
-    <h1>Inputs</h1>
+  <h1>Inputs</h1>
+  <div class="all-comp-inside">
     <input  class="box-input" placeholder="type in here"></input>
     <br><br><br>
     <textarea class="box-textarea" placeholder="type in here" cols="30" rows="5"></textarea>
@@ -236,30 +223,26 @@
   </div>
   <hr>
   <h1>Modal</h1>
-  <div>
+  <div class="all-comp-inside">
     <div class="modal">
-      <div>
-        <div class="modal-menu-position"><img src="/icon-btn/bars-solid.svg" class="modal-icon"></img></div>
-        <span>
-          <ul class="modal-list">
-            <li class="modal-list-item">option</li>
-            <li class="modal-list-item">option</li>
-            <li class="modal-list-item">option</li>
-            <li class="modal-list-item">option</li>
-          </ul>
-        </span>
+      <div class="modal-menu-position">
+        <img src="/icon-btn/bars-solid.svg" class="modal-icon"></img>
+        <ul class="modal-list">
+          <li class="modal-list-item">option</li>
+          <li class="modal-list-item">option</li>
+          <li class="modal-list-item">option</li>
+          <li class="modal-list-item">option</li>
+        </ul>
       </div>
     </div>
   </div>
   <hr>
-  <div>
-    <h1>Text Utilities</h1>
-    <div class="all-text-box">
-      <div class="text-h1">This is H1 text.</div>
-      <div class="text-small">This is small text.</div>
-      <div class="text-grey">This is grey text</div>
-      <div class="text-center">This is centered text</div>
-    </div>
+  <h1>Text Utilities</h1>
+  <div class="all-text-box">
+    <div class="text-h1">This is H1 text.</div>
+    <div class="text-small">This is small text.</div>
+    <div class="text-grey">This is grey text</div>
+    <div class="text-center">This is centered text</div>
   </div>
 </body>
 </html>
