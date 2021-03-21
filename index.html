@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Component Library By Amruta_D</title>
+  <script src="https://kit.fontawesome.com/fdb15b0584.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/index.css">
 </head>
 <body class="body-main">
@@ -34,7 +35,7 @@
   <hr>
   <h1>Alert</h1>
   <div class="all-comp-inside">
-    <div class="alert">
+    <div class="alert alert-regular">
       <div>OOPS! Something went wrong.<br>Please check-in after some time 😄</div>
     </div>
     <div class="alert alert-success">
@@ -212,34 +213,42 @@
     <textarea class="box-textarea" placeholder="type in here" cols="30" rows="5"></textarea>
   </div>
   <hr>
-  <div>
-    <h1>Lists</h1>
-    <ul class="list-spaced">
+  <h1>Lists</h1>
+  <div class="all-comp-inside">
+    <div>
       <h3>SPACED LIST</h3>
-      <li class="list-spaced-item">cheese</li>
-      <li class="list-spaced-item">maggi</li>
-      <li class="list-spaced-item">cold-coffee</li>
-      <li class="list-spaced-item">panipuri</li>
-    </ul>
-    <ul class="list-stacked">
+      <ul class="list">
+        <li class="list-items spaced-item">cheese</li>
+        <li class="list-items spaced-item">maggi</li>
+        <li class="list-items spaced-item">cold-coffee</li>
+        <li class="list-items spaced-item">panipuri</li>
+      </ul>
+    </div>
+    <div>
       <h3>STACKED LIST</h3>
-      <li class="list-stacked-item">cheese</li>
-      <li class="list-stacked-item">maggi</li>
-      <li class="list-stacked-item">cold-coffee</li>
-      <li class="list-stacked-item">panipuri</li>
-    </ul>
+      <ul class="list">
+        <li class="list-items stacked-item">cheese</li>
+        <li class="list-items stacked-item">maggi</li>
+        <li class="list-items stacked-item">cold-coffee</li>
+        <li class="list-items stacked-item">panipuri</li>
+      </ul>
+    </div>
   </div>
   <hr>
+  <h1>Modal</h1>
   <div>
-    <h1>Modal</h1>
     <div class="modal">
-      <div class="modal-close">X</div>
-      <ul class="modal-list">
-        <li class="modal-list-item">option</li>
-        <li class="modal-list-item">option</li>
-        <li class="modal-list-item">option</li>
-        <li class="modal-list-item">option</li>
-      </ul>
+      <div>
+        <div class="modal-menu-position"><img src="/icon-btn/bars-solid.svg" class="modal-icon"></img></div>
+        <span>
+          <ul class="modal-list">
+            <li class="modal-list-item">option</li>
+            <li class="modal-list-item">option</li>
+            <li class="modal-list-item">option</li>
+            <li class="modal-list-item">option</li>
+          </ul>
+        </span>
+      </div>
     </div>
   </div>
   <hr>
