@@ -20,6 +20,7 @@
   --ultra-red: #ed6e85;
 } */
 :root{
+  --bgcol: #faf9f9;
   --jet: #353535ff;
   --dark-liver: #534d56ff;
   --silver: #c6c5b9ff;
@@ -27,36 +28,20 @@
   --beau-blue: #bdd4e7ff;
   --iris: #3d52d5ff;
   --royal-blue-light: #5869da;
-  --violet-blue-crayola: #6878DE;
+  --component-color: #9ba5eb;
   --melon: #ffa69eff;
 }
 .body-main{
   margin: 1rem 1rem 1rem 1rem;
   text-align: center;
-  background-color: var(--jet);
-  color: var(--silver);
+  background-color: var(--bgcol);
+  color: var(--jet);
 }
 .all-comp-inside{
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
-.float-btn-div{
-  position: sticky;
-  bottom: 1rem;
-}
-.float-btn{
-  text-align:center;
-  position: fixed;
-  right: 1rem;
-  bottom:1rem;
-  color:black;
-  background-color: var(--violet-blue-crayola);
-  border: 2px solid white;
-  border-radius: 50%;
-  height:50px;
-  width:50px;
 }
 .avatar-img-1{
   margin:1rem;
@@ -65,7 +50,7 @@
   border: 1px solid white;
   border-radius: 60%;
   padding:1rem;
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--component-color);
 }
 .avatar-img-2{
   margin:1rem;
@@ -74,7 +59,7 @@
   border: 1px solid white;
   border-radius: 60%;
   padding:1rem;
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--component-color);
 }
 .avatar-img-3{
   margin:1rem;
@@ -83,7 +68,7 @@
   border: 1px solid white;
   border-radius: 60%;
   padding:1rem;
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--component-color);
 }
 .avatar-img-4{
   margin:1rem;
@@ -92,7 +77,7 @@
   border: 1px solid white;
   border-radius: 60%;
   padding:1rem;
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--component-color);
 }
 .alert{
   margin: 0.5rem;
@@ -103,7 +88,7 @@
   border-radius: 0.5rem;
 }
 .alert-regular{
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--component-color);
   border: 3px solid white;
 }
 .alert-success{
@@ -121,15 +106,25 @@
 .btn{
   margin: 1rem 1rem;
   color:black;
-  background-color: var(--violet-blue-crayola);
-  border: 5px solid var(--violet-blue-crayola);
+  background-color: var(--component-color);
+  border: 5px solid var(--component-color);
   border-radius: 0.5rem;
+  box-shadow: 4px 4px rgb(0,0,0,0.3);
+  outline: none;
+}
+.btn:active{
+  transform: scale(0.90)
+}
+.btn-primary{
+  margin: 1rem 1rem;
   height:50px;
   width:100px;
-  box-shadow: 4px 4px rgb(0,0,0,0.3);
 }
 .btn-secondary{
   background-color: white;
+  margin: 1rem 1rem;
+  height:50px;
+  width:100px;
 }
 .btn-icon-text{
   display: inline-flex;
@@ -142,6 +137,21 @@
 .icon-svg{
   height:30px;
   width:30px;
+}
+.float-btn-div{
+  position: sticky;
+  bottom: 1rem;
+}
+.float-btn{
+  text-align:center;
+  position: fixed;
+  right: 1rem;
+  bottom:1rem;
+  border: 2px solid white;
+  box-shadow: none;
+  border-radius: 50%;
+  height:50px;
+  width:50px;
 }
 .badge-div{
   position:relative;
@@ -162,7 +172,7 @@
   top:0.1rem;
 }
 .badge-icon-img{
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--component-color);
   margin:auto auto auto auto;
   padding:0.5rem;
   border: 1px solid white;
@@ -185,16 +195,16 @@
   width:80px;
   border: 1px solid white;
   border-radius: 60%;
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--component-color);
 }
 .badge-1{
   background-color: rgb(255, 166, 93);
 }
 .badge-2{
-  background-color: green;
+  background-color: rgb(2, 173, 2);
 }
 .badge-3{
-  background-color: red;
+  background-color: rgb(255, 30, 30);
 }
 .card-spaces{
   margin: 0.3rem;
@@ -202,11 +212,11 @@
 }
 .card-div{
   margin: auto;
-  height: 300px;
-  width: 200px;
+  height: 250px;
+  width: 180px;
   border: 1px solid white;
   border-radius: 0.5rem;
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--component-color);
   position:relative;
   text-align: center;
 }
@@ -219,7 +229,7 @@
 .card-img{
   margin: 0.5rem; 
   height: auto;
-  width: 180px;
+  width: 90%;
 }
 .card-badge{
   position:absolute;
@@ -254,20 +264,22 @@
   border-radius: 3rem;
   width: 120px;
   color: white;
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--component-color);
 }
 .card-dismiss-position:hover .on-card-dismiss{
   cursor: pointer;
   visibility: visible;
 }
 .card-overlay-img{
-  margin: 0.5rem;
-  opacity: 60%;
-  height: 280px;
-  width: 180px;
+  margin:  1rem auto;
+  align-self: center;
+  opacity: 40%;
+  border-radius: 0.5rem;
+  height: 90%;
+  width: 100%;
 }
 .card-overlay-text{
-  color: white;
+  /* color: white; */
   text-decoration: double;
   text-align: center;
   margin: 1rem;
@@ -284,7 +296,7 @@
 .card-text-btn{
   margin: 1rem auto 1rem 0.5rem;
   color:black;
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--component-color);
   border: 1px solid white;
   border-radius: 0.5rem;
   height:30px;
@@ -296,7 +308,7 @@
   width:200px;
   border: 1px solid white;
   border-radius: 0.5rem;
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--component-color);
   box-shadow: 7px 7px rgb(0 ,0 ,0 ,0.7);
   margin: 0.5rem;
   position:relative;
@@ -309,7 +321,7 @@
   border: 1px solid white;
   border-radius: 0.5rem;
   margin: auto auto 0.5rem auto;
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--component-color);
 }
 /* the class below is just for this page's layout to put images in one row.*/
 .img-resp{
@@ -357,11 +369,11 @@
 .box-input{
   height:25px;
   width: 200px;
-  border: 5px solid var(--violet-blue-crayola);
+  border: 5px solid var(--component-color);
   border-radius: 0.5rem; 
 }
 .box-textarea{
-  border: 5px solid var(--violet-blue-crayola);
+  border: 5px solid var(--component-color);
   border-radius: 0.5rem; 
 }
 
@@ -372,7 +384,7 @@
   width:fit-content;
   border: 1px solid white;
   border-radius: 0.5rem;
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--component-color);
 }
 .list-items{
   width: auto;
@@ -388,7 +400,7 @@
   margin: 0px 10px 0px 10px;
 }
 .modal{
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--component-color);
   height: 300px;
   width:200px;
   text-align: center;
@@ -426,7 +438,7 @@
   border-radius: 0.5rem;
 }
 .all-text-box{
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--component-color);
 }
 .text-h1{
   font-size: 1.8em;
