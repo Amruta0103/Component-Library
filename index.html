@@ -8,7 +8,9 @@
 </head>
 <body class="body-main">
   <!-- jcpicker , pichon -->
-  <div class="float-btn-div"><button class="float-btn">+</button></div>
+  <div class="float-btn-div">
+    <button class="float-btn"><a src="/"target="_blank"><img class="icon-svg" src="icon-btn/angle-up-solid.svg"></a></button>
+  </div>
   <h1>Avatar</h1>
   <div class="all-comp-inside">
     <div>
@@ -50,9 +52,22 @@
   <div class="all-comp-inside">
     <div class="all-buttons">
       <button class="btn">primary</button>
-      <button class="btn secondary-btn">secondary</button>
+      <button class="btn btn-secondary">secondary</button>
       <button class="btn" src="/">link</button>
-      <button class="btn icon-btn" ><img class="icon-btn-icon" src="/icon-btn/home.svg"></img></button>
+    </div>
+    <div class="all-buttons">
+      <button class="btn icon-btn-size"><img class="icon-svg" src="/icon-btn/home-solid.svg"></img></button>
+      <button class="btn icon-btn-size">
+        <img class="icon-svg" src="/icon-btn/edit-solid.svg"></img>
+      </button>
+      <button class="btn btn-icon-text">
+        <img class="icon-svg" src="/icon-btn/save-solid.svg"></img>&nbsp;
+        <h3>SAVE</h3>
+      </button>
+      <button class="btn btn-icon-text">
+        <img class="icon-svg" src="/icon-btn/share-alt-square-solid.svg"></img>&nbsp;
+        <h3>SHARE</h3>
+      </button>
     </div>
   </div>
   <hr>
@@ -61,15 +76,15 @@
     <div class="all-comp-inside">
       <div class="badge-div">
         <div class="badge-on-icon badge-1"></div>
-        <img class="badge-icon-img" src="/icon-btn/home.svg"></img>
+        <img class="badge-icon-img" src="/icon-btn/home-solid.svg"></img>
       </div>
       <div class="badge-div">
         <div class="badge-on-icon badge-2"></div>
-        <img class="badge-icon-img" src="/icon-btn/home.svg"></img>
+        <img class="badge-icon-img" src="/icon-btn/home-solid.svg"></img>
       </div>
       <div class="badge-div">
         <div class="badge-on-icon badge-3"></div>
-        <img class="badge-icon-img" src="/icon-btn/home.svg"></img>
+        <img class="badge-icon-img" src="/icon-btn/home-solid.svg"></img>
       </div>
     </div>
     <div class="all-comp-inside">
@@ -101,7 +116,10 @@
       <div class="card-title">Card w/ Dismiss</div>
       <div class="card-div">
         <img class="card-img" src="/temp-image/temp-img.svg"></img>          
-        <div class="card-dismiss">X<span class="on-card-dismiss">I'M not active currently</span></div>
+        <div class="card-dismiss-position">
+          <img class="card-dismiss-icon" src="icon-btn/times-circle-solid.svg">
+          <span class="on-card-dismiss">I'M not active currently</span>
+        </div>
       </div>
     </div>
     <div class="card-spaces">
@@ -232,6 +250,7 @@
           <li class="modal-list-item">option</li>
         </ul>
       </div>
+      <p>--hover above--</p>
     </div>
   </div>
   <hr>

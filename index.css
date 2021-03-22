@@ -32,10 +32,9 @@
 }
 .body-main{
   margin: 1rem 1rem 1rem 1rem;
-  text-align: left;
+  text-align: center;
   background-color: var(--jet);
   color: var(--silver);
-  /* justify-content: left; */
 }
 .all-comp-inside{
   text-align: center;
@@ -55,7 +54,6 @@
   color:black;
   background-color: var(--violet-blue-crayola);
   border: 2px solid white;
-  font-size: x-large;
   border-radius: 50%;
   height:50px;
   width:50px;
@@ -117,10 +115,11 @@
   color: red;
 }
 .all-buttons{
-  justify-content: space-evenly;
+  height:fit-content;
+  /* display: block; */
 }
 .btn{
-  margin: 1rem;
+  margin: 1rem 1rem;
   color:black;
   background-color: var(--violet-blue-crayola);
   border: 5px solid var(--violet-blue-crayola);
@@ -129,17 +128,20 @@
   width:100px;
   box-shadow: 4px 4px rgb(0,0,0,0.3);
 }
-.secondary-btn{
+.btn-secondary{
   background-color: white;
 }
-.icon-btn{
-  height:60px;
-  width:60px;
+.btn-icon-text{
+  display: inline-flex;
+  align-items: center;
 }
-.icon-btn-icon{
+.icon-btn-size{
+  height:50px;
+  width:50px;
+}
+.icon-svg{
   height:30px;
   width:30px;
-  margin:auto;
 }
 .badge-div{
   position:relative;
@@ -231,14 +233,17 @@
   background-color: rgb(255, 60, 82);
   box-shadow: 0px 3px rgb(255, 60, 82,0.7);
 }
-.card-dismiss{
-  border: 1px solid white;
-  color: black;
-  width: 15px;
-  height: 15px;
+.card-dismiss-position{
   position: absolute;
-  right: 0.5rem;
-  top: 0.5rem;
+  height:fit-content;
+  width:fit-content;
+  right: 0.3rem;
+  top: 0.3rem;
+  /* border: 1px solid black; */
+}
+.card-dismiss-icon{
+  height:20px;
+  width:20px;
 }
 .on-card-dismiss{
   visibility:hidden;
@@ -251,7 +256,8 @@
   color: white;
   background-color: var(--violet-blue-crayola);
 }
-.card-dismiss:hover .on-card-dismiss{
+.card-dismiss-position:hover .on-card-dismiss{
+  cursor: pointer;
   visibility: visible;
 }
 .card-overlay-img{
@@ -272,7 +278,7 @@
 .card-text{
   margin: 0.5rem;
   padding: 0.5rem;
-  text-align: left;
+  /* text-align: center; */
   font-size: larger;
 }
 .card-text-btn{
@@ -383,8 +389,8 @@
 }
 .modal{
   background-color: var(--violet-blue-crayola);
-  height: 350px;
-  width:300px;
+  height: 300px;
+  width:200px;
   text-align: center;
   margin: 1rem;
   border: 1px solid white;
@@ -394,7 +400,7 @@
 .modal-menu-position{
   height: auto;
   width: auto;
-  margin: 1rem auto;
+  margin: auto;
   padding: auto;
 }
 .modal-icon{
@@ -407,7 +413,7 @@
   list-style: none;
   padding: 1rem;
   border: 1px solid white;
-  margin: 2rem;
+  /* margin: 2rem; */
   justify-content: space-between;
 }
 .modal-menu-position:hover .modal-list{
