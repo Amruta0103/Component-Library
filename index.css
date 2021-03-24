@@ -4,27 +4,25 @@
   --button-col: #df3105;
   --card-col: #fff2ef;
   --new-tag: #1f65ff;
-  margin: 0px;
+  margin: 0rem auto 0rem auto;
 }
 .body-main{
-  margin: 5rem 0rem 0rem 0rem;
+  margin: 5rem auto auto auto;
   text-align: center;
   background-color: var(--bgcol);
   color: var(--text-col);
   text-decoration: solid;
-}
-.floats{
-  margin-top: 0rem;
+  justify-content: center;
 }
 .navbar{
   text-align: right;
-  margin: auto;
+  margin: 0rem;
   position: fixed;
-  top:0rem;
+  left: 0rem;
+  top: 0rem;
   z-index: 100;
   background-color: #ffffff;
-  width: 100pc;
-  border-radius: 0.5rem;
+  width: 100%;
   padding: 0.5rem;
 }
 .nav-list{
@@ -44,9 +42,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
-hr{
-  color: var(--text-col);
 }
 .avatar{
   margin:1rem;
