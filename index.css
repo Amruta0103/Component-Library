@@ -7,7 +7,7 @@
   margin: 0px;
 }
 .body-main{
-  margin: 5rem auto auto auto;
+  margin: 5rem 0rem 0rem 0rem;
   text-align: center;
   background-color: var(--bgcol);
   color: var(--text-col);
@@ -147,14 +147,14 @@ hr{
   width:20px;
 }
 .float-btn-div{
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
   z-index: 100;
   width: fit-content;
   height: fit-content;
 }
 .float-btn{
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
   margin: 0rem;
   text-align:center;
   border: 2px solid white;
