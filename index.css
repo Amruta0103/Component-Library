@@ -4,13 +4,41 @@
   --button-col: #df3105;
   --card-col: #fff2ef;
   --new-tag: #1f65ff;
+  margin: 0px;
+  /* padding: 0px; */
 }
 .body-main{
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 5rem auto auto auto;
   text-align: center;
   background-color: var(--bgcol);
   color: var(--text-col);
   text-decoration: solid;
+}
+.floats{
+  margin-top: 0rem;
+}
+.navbar{
+  text-align: right;
+  margin: 0rem;
+  position: fixed;
+  top:0rem;
+  z-index: 100;
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.nav-list{
+  position: sticky;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  list-style: none;
+  display: flex;
+  padding-inline-start: 0px;
+}
+.nav-items{
+  margin: 0.5rem;
+  font-size: large;
 }
 .all-comp-inside{
   text-align: center;
@@ -121,6 +149,7 @@ hr{
 .float-btn-div{
   position: sticky;
   bottom: 1rem;
+  z-index: 100;
 }
 .float-btn{
   text-align:center;
