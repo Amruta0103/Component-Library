@@ -5,7 +5,6 @@
   --card-col: #fff2ef;
   --new-tag: #1f65ff;
   margin: 0px;
-  /* padding: 0px; */
 }
 .body-main{
   margin: 5rem auto auto auto;
@@ -19,12 +18,12 @@
 }
 .navbar{
   text-align: right;
-  margin: 0rem;
+  margin: auto;
   position: fixed;
   top:0rem;
   z-index: 100;
   background-color: #ffffff;
-  width: 100%;
+  width: 100pc;
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
@@ -111,6 +110,7 @@ hr{
   border-radius: 1rem;
   box-shadow: 4px 4px rgb(0,0,0,0.3);
   outline: none;
+  transition: 0.5s;
 }
 .btn:active{
   transform: scale(0.90)
