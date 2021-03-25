@@ -9,7 +9,8 @@
   margin: 0rem 0rem 0rem 0rem;
 }
 .body-main{
-  margin: 5rem auto auto auto;
+  margin: auto;
+  margin-top: 5rem;
   text-align: center;
   background-color: var(--bgcol);
   color: var(--text-col);
