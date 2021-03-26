@@ -6,12 +6,10 @@
   --button-col: #df3105;
   --card-col: #fff2ef;
   --new-tag: #1f65ff;
-  justify-content: space-around;
-  width: 100%;
-  margin:0rem;
+  width: auto;
 }
 .body-main{
-  margin:0rem;
+  margin: 0rem;
   margin-top: 5rem;
   width: 100vw;
   text-align: center;
@@ -22,9 +20,9 @@
 }
 .navbar{
   display:flex;
-  position: fixed;
+  position: relative;
   left: 0rem;
-  top: 0rem;
+  top: -5rem;
   z-index: 10;
   background-color: #ffffff;
   width: 100%;
@@ -40,12 +38,27 @@
   margin: auto 1.5rem auto auto;
 }
 .nav-icon{
-  position: fixed;
   right: 1.5rem;
   top: 1.5rem;
   height:20px;
   width:20px;
   color:var(--text-col);
+}
+.float-btn-div{
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+}
+.float-btn{
+  z-index: 100;
+  margin: 0rem;
+  text-align:center;
+  border: 2px solid white;
+  box-shadow: none;
+  border-radius: 50%;
+  height:50px;
+  width:50px;
+  background-color: var(--button-col);
 }
 .all-comp-inside{
   text-align: center;
@@ -61,20 +74,16 @@
   background-color: #ffffff;
 }
 .avatar-img1{
-  height:40px;
-  width:40px;
+  height:3rem;
+  width:3rem;
 }
 .avatar-img2{
-  height:60px;
-  width:60px;
+  height:4rem;
+  width:4rem;
 }
 .avatar-img3{
-  height:80px;
-  width:80px;
-}
-.avatar-img4{
-  height:100px;
-  width:100px;
+  height:5rem;
+  width:5rem;
 }
 .alert{
   margin: 1rem;
@@ -112,8 +121,8 @@
   color: white;
   background-color: var(--button-col);
   border: 5px solid var(--button-col);
-  border-radius: 1rem;
-  box-shadow: 4px 4px rgb(0,0,0,0.3);
+  border-radius: 3rem;
+  box-shadow: 0.3rem 0.3rem rgb(0,0,0,0.3);
   outline: none;
   transition: 0.5s;
 }
@@ -122,15 +131,15 @@
 }
 .btn-primary{
   margin: 0.5rem 0.5rem;
-  height:50px;
-  width:100px;
+  height: 3rem;
+  width: 6rem;
 }
 .btn-secondary{
   color: var(--button-col);
   background-color: #ffffff;
   margin: 1rem 1rem;
-  height:50px;
-  width:100px;
+  height: 3rem;
+  width: 6rem;
 }
 .btn-icon-text{
   height: 40px;
@@ -150,24 +159,6 @@
 .text-btn-icon{
   height: 20px;
   width:20px;
-}
-.float-btn-div{
-  width: fit-content;
-  height: fit-content;
-  position: fixed;
-  right: 1.5rem;
-  bottom: 1.5rem;
-}
-.float-btn{
-  z-index: 100;
-  /* position:sticky; */
-  margin: 0rem;
-  text-align:center;
-  border: 2px solid white;
-  box-shadow: none;
-  border-radius: 50%;
-  height:50px;
-  width:50px;
 }
 .badge-div{
   position:relative;
@@ -224,11 +215,9 @@
   background-color: #f62915;
 }
 .card-spaces{
-  margin: 0.3rem;
-  justify-content: space-around;
+  margin: 1rem;
 }
 .card-div{
-  margin: auto;
   height: 250px;
   width: 180px;
   border: 1px solid var(--text-col);
