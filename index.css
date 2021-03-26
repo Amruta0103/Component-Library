@@ -6,16 +6,18 @@
   --button-col: #df3105;
   --card-col: #fff2ef;
   --new-tag: #1f65ff;
-  margin: 0rem 0rem 0rem 0rem;
+  justify-content: space-around;
+  width: 100%;
+  margin:0rem;
 }
 .body-main{
-  margin: auto;
+  margin:0rem;
   margin-top: 5rem;
+  width: 100vw;
   text-align: center;
   background-color: var(--bgcol);
   color: var(--text-col);
   text-decoration: solid;
-  justify-content: center;
   font-family: 'Roboto Condensed', sans-serif;
 }
 .navbar{
@@ -23,7 +25,7 @@
   position: fixed;
   left: 0rem;
   top: 0rem;
-  z-index: 100;
+  z-index: 10;
   background-color: #ffffff;
   width: 100%;
   padding: 1rem;
@@ -38,6 +40,9 @@
   margin: auto 1.5rem auto auto;
 }
 .nav-icon{
+  position: fixed;
+  right: 1.5rem;
+  top: 1.5rem;
   height:20px;
   width:20px;
   color:var(--text-col);
@@ -46,7 +51,7 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .avatar{
   margin:1rem;
@@ -147,15 +152,15 @@
   width:20px;
 }
 .float-btn-div{
-  
   width: fit-content;
   height: fit-content;
-}
-.float-btn{
-  z-index: 100;
   position: fixed;
   right: 1.5rem;
   bottom: 1.5rem;
+}
+.float-btn{
+  z-index: 100;
+  /* position:sticky; */
   margin: 0rem;
   text-align:center;
   border: 2px solid white;
