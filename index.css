@@ -6,7 +6,7 @@
   --button-col: #df3105;
   --card-col: #fff2ef;
   --new-tag: #1f65ff;
-  width: auto;
+  --index1 : 1 ;
 }
 .body-main{
   margin: 0rem;
@@ -19,10 +19,15 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 .navbar{
+  width: ;
+  position:relative;
+}
+.nav-box{
+  z-index: var(--index1);
   display:flex;
-  position: relative;
+  position: fixed;
   left: 0rem;
-  top: -5rem;
+  top: 0rem;
   z-index: 10;
   background-color: #ffffff;
   width: 100%;
@@ -37,7 +42,11 @@
   width:fit-content;
   margin: auto 1.5rem auto auto;
 }
+.nav-icon-box{
+  position:relative;
+}
 .nav-icon{
+  position:fixed;
   right: 1.5rem;
   top: 1.5rem;
   height:20px;
