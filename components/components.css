@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+:root{
+  --bgcol: #fdcbbe;
+  --text-col: #0c0300;
+  --button-col: #df3105;
+  --card-col: #fff2ef;
+  --new-tag: #1f65ff;
+  --index1 : 1 ;
+}
+
+/* 426, 520 */
+@media(min-width:426px){
+  :root{
+    margin: 0rem 1rem;
+  } 
+}
+
+.body-main{
+  margin: 0rem;
+  width: 100vw;
+  text-align: center;
+  background-color: var(--bgcol);
+  color: var(--text-col);
+  text-decoration: solid;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.navbar{
+  position:relative;
+}
+.nav-box{
+  /* z-index: var(--index1); */
+  display:flex;
+  position: fixed;
+  left: 0rem;
+  top: 0rem;
+  z-index: 10;
+  background-color: #ffffff;
+  width: 100vw;
+  padding: 1rem;
+}
+.brand-name{
+  font-family: 'Truculenta', sans-serif;
+  font-weight: 400;
+  font-size: xx-large;
+}
+.nav-right{
+  width:fit-content;
+  margin: auto 1.5rem auto auto;
+}
+.nav-icon-box{
+  position:relative;
+}
+.nav-icon{
+  position:fixed;
+  right: 1.5rem;
+  top: 1.5rem;
+  height:20px;
+  width:20px;
+  color:var(--text-col);
+}
+.float-btn-div{
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+}
+.float-btn{
+  z-index: 100;
+  margin: 0rem;
+  text-align:center;
+  border: 2px solid white;
+  box-shadow: none;
+  border-radius: 50%;
+  height:50px;
+  width:50px;
+  background-color: var(--button-col);
+}
+.all-comp-inside{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.avatar{
+  margin:1rem;
+  border: 1px solid white;
+  border-radius: 60%;
+  padding:1rem;
+  background-color: #ffffff;
+}
+.avatar-img1{
+  height:3rem;
+  width:3rem;
+}
+.avatar-img2{
+  height:4rem;
+  width:4rem;
+}
+.avatar-img3{
+  height:5rem;
+  width:5rem;
+}
+.alert{
+  margin: 1rem;
+  padding: 1.5rem;
+  height: fit-content;
+  text-align: center;
+  align-self: center;
+  border-radius: 0.5rem;
+}
+.alert-regular{
+  background-color: #fefefe;
+  color: #636464;
+  border: 1px solid;
+}
+.alert-warning{
+  background-color: rgb(255, 243, 205);
+  color: #6c4c00;
+  border: 1px solid;
+}
+.alert-success{
+  background-color: #cbe8de;
+  color: #005235;
+  border: 1px solid;
+}
+.alert-fail{
+  background-color: #ffd6d9;
+  color: #931320;
+  border: 1px solid;
+}
+.all-buttons{
+  height:fit-content;
+}
+.btn{
+  margin: 1rem 1rem;
+  color: white;
+  background-color: var(--button-col);
+  border: 5px solid var(--button-col);
+  border-radius: 3rem;
+  box-shadow: 0.3rem 0.3rem rgb(0,0,0,0.3);
+  outline: none;
+  transition: 0.5s;
+}
+.btn:active{
+  transform: scale(0.90)
+}
+.btn-primary{
+  margin: 0.5rem 0.5rem;
+  height: 3rem;
+  width: 6rem;
+}
+.btn-secondary{
+  color: var(--button-col);
+  background-color: #ffffff;
+  margin: 1rem 1rem;
+  height: 3rem;
+  width: 6rem;
+}
+.btn-icon-text{
+  height: 40px;
+  width: 100px;
+  box-shadow: none;
+  display: inline-flex;
+  align-items: center;
+}
+.icon-btn-size{
+  height:50px;
+  width:50px;
+}
+.icon-svg{
+  height:30px;
+  width:30px;
+}
+.text-btn-icon{
+  height: 20px;
+  width:20px;
+}
+.badge-div{
+  position:relative;
+  display: flex;
+  margin:auto;
+  padding:0.5rem;
+  width: fit-content;
+  height: fit-content;
+  vertical-align: middle;
+}
+.badge-on-icon{
+  height:20px;
+  width:20px;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  right:0.1rem;
+  top:0.1rem;
+}
+.badge-icon-img{
+  background-color: white;
+  margin:auto auto auto auto;
+  padding:0.5rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  height:40px;
+  width:40px;
+  align-items: center;
+}
+.badge-on-avatar{
+  height:20px;
+  width:20px;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  right:0.5rem;
+  top:0.5rem;
+}
+.badge-avatar-img{
+  padding: 0.8rem;
+  height:50px;
+  width:50px;
+  border: 1px solid white;
+  border-radius: 60%;
+  background-color: white;
+}
+.badge-1{
+  background-color: #fb8500;
+}
+.badge-2{
+  background-color: #00a150;
+}
+.badge-3{
+  background-color: #f62915;
+}
+.card-spaces{
+  margin: 1rem;
+}
+.card-div{
+  height: 250px;
+  width: 180px;
+  border: 1px solid var(--text-col);
+  border-radius: 0.5rem;
+  background-color: var(--card-col);
+  position:relative;
+  text-align: center;
+}
+.card-title{
+  font-size: large;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  text-decoration: overline underline;
+}
+.card-img{
+  margin: 0.5rem; 
+  height: auto;
+  width: 90%;
+}
+.card-badge{
+  position:absolute;
+  right: 0rem;
+  top: 1rem;
+  width:100px;
+  height:20px;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+  color: white;
+  background-color: var(--new-tag);
+}
+.card-dismiss-position{
+  position: absolute;
+  height:fit-content;
+  width:fit-content;
+  right: 0.3rem;
+  top: 0.3rem;
+}
+.card-dismiss-icon{
+  height:20px;
+  width:20px;
+}
+.on-card-dismiss{
+  visibility:hidden;
+  position:absolute;
+  left: -3rem;
+  top: 1.5rem;
+  border: 1px solid whitesmoke;
+  border-radius: 3rem;
+  width: 120px;
+  color: var(--text-col);
+  background-color: var(--card-col);
+}
+.card-dismiss-position:hover .on-card-dismiss{
+  cursor: pointer;
+  visibility: visible;
+}
+.card-overlay-img{
+  margin:  1rem auto;
+  align-self: center;
+  opacity: 40%;
+  border-radius: 0.5rem;
+  height: 90%;
+  width: 100%;
+}
+.card-overlay-text{
+  text-decoration: double;
+  text-align: center;
+  margin: 1rem;
+  position: absolute;
+  top: 1rem;
+}
+.card-text{
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: larger;
+}
+.card-text-btn{
+  margin: 1rem auto 1rem 0.5rem;
+  color:black;
+  background-color: var(--button-col);
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  height:30px;
+  width:80px;
+  box-shadow: 5px 5px rgb(0,0,0,0.5);
+}
+.card-shadow{
+  margin: 0rem;
+  box-shadow: 0.5rem 0.5rem rgb(0 ,0 ,0 ,0.7);
+}
+.card-horizontal{
+  margin: 0.5rem;
+  height: 170px;
+  width: 300px;
+}
+/* the class below is just for this page's layout to put images in one row.*/
+.img-resp{
+  border: 1px solid black;
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+}
+.resp1{
+  margin: 2rem;
+  height: 100px;
+  width: 100px;
+}
+.resp2{
+  margin: 2rem;
+  height: 150px;
+  width: 150px;
+}
+.resp3{
+  margin: 2rem;
+  height: 200px;
+  width: 200px;
+}
+.img-round{
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.round1{
+  height: 100px;
+  width: 100px
+}
+.round2{
+  height: 150px;
+  width: 150px;
+}
+.round3{
+  height: 200px;
+  width: 200px;
+}
+.box-input{
+  height:25px;
+  width: 200px;
+  color: var(--text-col);
+  border: 1px solid var(--text-col);
+  border-radius: 0.5rem;
+  margin: auto;
+}
+.box-input:active{
+  outline: none;
+}
+.box-textarea{
+  color: var(--text-cols);
+  border: 1px solid var(--text-col);
+  border-radius: 0.5rem;
+  margin: auto;
+}
+.list{
+  margin:auto;
+  padding:1rem;
+  list-style: none;
+  width:fit-content;
+  border: 1px solid var(--text-col);
+  border-radius: 0.5rem;
+  background-color: var(--bgcol);
+}
+.list-items{
+  width: auto;
+  padding: 0.5rem;
+  border: 2px solid var(--text-col);
+  border-radius: 0.5rem;
+}
+.spaced-item{
+  margin: 1rem;
+  background-color: white;
+}
+.stacked-item{
+  margin: 0.3rem;
+  background-color: white;
+}
+.modal{
+  background-color: var(--component-color);
+  height: 300px;
+  width:200px;
+  text-align: center;
+  margin: 1rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.modal-menu-position{
+  height: auto;
+  width: auto;
+  margin: auto;
+  padding: auto;
+}
+.modal-icon{
+  height: 30px;
+  width:30px;
+  color:whitesmoke;
+}
+.modal-list{
+  visibility: hidden;
+  list-style: none;
+  padding: 1rem;
+  border: 1px solid white;
+  justify-content: space-between;
+}
+.modal-menu-position:hover .modal-list{
+  visibility: visible;
+}
+.modal-list-item{
+  padding: 0.3rem;
+  margin: 0.3rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+}
+.all-text-box{
+  background-color: var(--component-color);
+}
+.text-h1{
+  font-size: 1.8em;
+}
+.text-small{
+  font-size: 0.8em;
+}
+.text-grey{
+  color: rgb(124, 124, 124);
+}
+.text-center{
+  text-align: center;
+}
