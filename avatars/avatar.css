@@ -8,29 +8,24 @@
   --new-tag: #1f65ff;
   --index1 : 1 ;
 }
-/* 426, 520 */
-@media(min-width:426px){
-  :root{
-    margin: 0rem 1rem;
-  } 
-}
-
 .body-main{
+  display: flex;
+  justify-content: center;
   margin: 0rem;
-  margin-top: 15rem;
+  margin-top: 4rem;
   width: 100vw;
   text-align: center;
   background-color: var(--bgcol);
   color: var(--text-col);
   text-decoration: solid;
   font-family: 'Roboto Condensed', sans-serif;
-  align-items: center;
+  /* align-items: center; */
 }
 .navbar{
   position:relative;
+  margin: 0rem;;
 }
 .nav-box{
-  /* z-index: var(--index1); */
   display:flex;
   position: fixed;
   left: 0rem;
@@ -38,12 +33,11 @@
   z-index: 10;
   background-color: #ffffff;
   width: 100vw;
-  padding: 1rem;
 }
 .brand-name{
   font-family: 'Truculenta', sans-serif;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding:0.5rem;
 }
 .title{
@@ -66,55 +60,39 @@
   width:20px;
   color:var(--text-col);
 }
-.float-btn-div{
-  position: fixed;
-  right: 1.5rem;
-  bottom: 1.5rem;
-}
-.float-btn{
-  z-index: 100;
+.sidebar{
+  height: 100vh;
+  width: auto;
+  padding: 1rem;
   margin: 0rem;
-  text-align:center;
-  border: 2px solid white;
-  box-shadow: none;
-  border-radius: 50%;
-  height:50px;
-  width:50px;
-  background-color: var(--button-col);
+  background-color: #ffffff;
+  margin-left: 0rem;
+  position: fixed;
+  left: 0rem;
 }
-.icon-svg{
-  height:30px;
-  width:30px;
+.side-comps{
+  list-style: none;
 }
-.all-comp-inside{
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.side-comp-link{
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 1rem;
 }
-.btn-div{
-  margin:auto;
-  width: fit-content;
+.avatar{
+  margin:1rem;
+  border: 1px solid white;
+  border-radius: 60%;
+  padding:1rem;
+  background-color: #ffffff;
 }
-.btn{
-  margin: 1rem 1rem;
-  color: white;
-  background-color: var(--button-col);
-  border: 5px solid var(--button-col);
-  border-radius: 3rem;
-  box-shadow: 0.3rem 0.3rem rgb(0,0,0,0.3);
-  outline: none;
-  transition: 0.5s;
+.avatar-img1{
+  height:3rem;
+  width:3rem;
 }
-.btn:active{
-  transform: scale(0.90)
+.avatar-img2{
+  height:4rem;
+  width:4rem;
 }
-.btn-primary{
-  margin: 0.5rem 0.5rem;
-  height: 3rem;
-  width: 6rem;
-}
-.link{
-  text-decoration: none;
-  margin: auto;
+.avatar-img3{
+  height:5rem;
+  width:5rem;
 }
