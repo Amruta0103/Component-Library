@@ -8,28 +8,24 @@
   --new-tag: #1f65ff;
   --index1 : 1 ;
 }
-
-/* 426, 520 */
-@media(min-width:426px){
-  :root{
-    margin: 0rem 1rem;
-  } 
-}
-
 .body-main{
+  display: flex;
+  justify-content: center;
   margin: 0rem;
-  width: 100vw;
+  margin-top: 4rem;
+  width: 100%;
   text-align: center;
   background-color: var(--bgcol);
   color: var(--text-col);
   text-decoration: solid;
   font-family: 'Roboto Condensed', sans-serif;
+  /* align-items: center; */
 }
 .navbar{
   position:relative;
+  margin: 0rem;;
 }
 .nav-box{
-  /* z-index: var(--index1); */
   display:flex;
   position: fixed;
   left: 0rem;
@@ -37,27 +33,35 @@
   z-index: 10;
   background-color: #ffffff;
   width: 100vw;
-  padding: 1rem;
+  box-shadow: 0.2rem 0.2rem rgb(0,0,0,0.2);
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 .brand-name{
   font-family: 'Truculenta', sans-serif;
   font-weight: 400;
-  font-size: xx-large;
+  font-size: 2.5rem;
+  padding:0.5rem;
 }
-.nav-right{
-  width:fit-content;
-  margin: auto 1.5rem auto auto;
+.sidebar{
+  height: 100vh;
+  width: auto;
+  padding: 0rem;
+  margin: 0rem;
+  background-color: #ffffff;
+  margin-left: 0rem;
+  position: fixed;
+  left: 0rem;
+  border: 1px solid black;
 }
-.nav-icon-box{
-  position:relative;
-}
-.nav-icon{
-  position:fixed;
-  right: 1.5rem;
-  top: 1.5rem;
-  height:20px;
-  width:20px;
-  color:var(--text-col);
+.side-comps{
+  list-style: none;
+  padding-inline-start: 0rem;
+  padding:1rem;
 }
 .float-btn-div{
   position: fixed;
@@ -76,10 +80,21 @@
   background-color: var(--button-col);
 }
 .all-comp-inside{
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+.btn-sidebar{
+  margin: 0.5rem 1rem;
+  background-color: white;
+  border:0px;
+  border-radius: 3rem;
+  box-shadow: 0.2rem 0.2rem rgb(0,0,0,0.4);
+  outline: none;
+  transition: 0.5s;
+}
+.btn-sidebar:active{
+  transform: scale(0.90)
 }
 .avatar{
   margin:1rem;
@@ -99,6 +114,11 @@
 .avatar-img3{
   height:5rem;
   width:5rem;
+}
+.all-alerts{
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem auto;
 }
 .alert{
   margin: 1rem;
@@ -130,9 +150,16 @@
 }
 .all-buttons{
   height:fit-content;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+}
+.btn-div{
+  margin:auto;
+  width: fit-content;
 }
 .btn{
-  margin: 1rem 1rem;
+  margin: 1rem auto;
   color: white;
   background-color: var(--button-col);
   border: 5px solid var(--button-col);
@@ -145,14 +172,12 @@
   transform: scale(0.90)
 }
 .btn-primary{
-  margin: 0.5rem 0.5rem;
   height: 3rem;
   width: 6rem;
 }
 .btn-secondary{
   color: var(--button-col);
   background-color: #ffffff;
-  margin: 1rem 1rem;
   height: 3rem;
   width: 6rem;
 }
@@ -175,10 +200,19 @@
   height: 20px;
   width:20px;
 }
+.link{
+  text-decoration: none;
+  margin: auto;
+  color: black;
+}
+.all-badges{
+  display:flex;
+  margin: 2rem auto;
+}
 .badge-div{
   position:relative;
   display: flex;
-  margin:auto;
+  margin: auto;
   padding:0.5rem;
   width: fit-content;
   height: fit-content;
@@ -230,7 +264,8 @@
   background-color: #f62915;
 }
 .card-spaces{
-  margin: 1rem;
+  margin: 1rem auto;
+  width: fit-content;
 }
 .card-div{
   height: 250px;
@@ -329,26 +364,10 @@
   width: 300px;
 }
 /* the class below is just for this page's layout to put images in one row.*/
-.img-resp{
-  border: 1px solid black;
-  cursor: pointer;
-  height: auto;
-  width: 100%;
-}
-.resp1{
-  margin: 2rem;
-  height: 100px;
-  width: 100px;
-}
-.resp2{
-  margin: 2rem;
-  height: 150px;
-  width: 150px;
-}
-.resp3{
-  margin: 2rem;
-  height: 200px;
-  width: 200px;
+.all-images{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem auto;
 }
 .img-round{
   margin: 1rem;
@@ -366,6 +385,30 @@
 .round3{
   height: 200px;
   width: 200px;
+}
+.img-resp{
+  border: 1px solid black;
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+  margin: 1rem;
+}
+.resp1{
+  height: 100px;
+  width: 100px;
+}
+.resp2{
+  height: 150px;
+  width: 150px;
+}
+.resp3{
+  height: 200px;
+  width: 200px;
+}
+.all-inputs{
+  justify-content: center;
+  align-items: center;
+  margin: auto; 
 }
 .box-input{
   height:25px;
