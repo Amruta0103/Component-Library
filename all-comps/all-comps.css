@@ -19,7 +19,6 @@
   color: var(--text-col);
   text-decoration: solid;
   font-family: 'Roboto Condensed', sans-serif;
-  align-items: center;
 }
 .navbar{
   position:relative;
@@ -48,10 +47,11 @@
   padding:0.5rem;
 }
 .sidebar{
-  height: 100vh;
+  height: 100%;
   width: auto;
   padding: 0rem;
   margin: 0rem;
+  position:fixed;
   background-color: #ffffff;
   margin-left: 0rem;
   left: 0rem;
@@ -60,7 +60,32 @@
 .side-comps{
   list-style: none;
   padding-inline-start: 0rem;
-  padding:1rem;
+  padding:0.5rem;
+}
+.side-btn-div{
+  margin: 0rem;
+  width: fit-content;
+}
+.side-link{
+  text-decoration: none;
+  margin: 0rem;
+  color: black;
+}
+.side-btn-primary{
+  height: 2.5rem;
+  width: 5.5rem;
+}
+.btn-sidebar{
+  margin: 0.2rem 1rem;
+  background-color: white;
+  border:0px;
+  border-radius: 3rem;
+  box-shadow: 0.2rem 0.2rem rgb(0,0,0,0.2);
+  outline: none;
+  transition: 0.5s;
+}
+.btn-sidebar:active{
+  transform: scale(0.90)
 }
 .float-btn-div{
   position: fixed;
@@ -83,17 +108,14 @@
   align-items: center;
   margin: 1rem auto;
 }
-.btn-sidebar{
-  margin: 0.5rem 1rem;
-  background-color: white;
-  border:0px;
-  border-radius: 3rem;
-  box-shadow: 0.2rem 0.2rem rgb(0,0,0,0.4);
-  outline: none;
-  transition: 0.5s;
+.element-snippet{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
 }
-.btn-sidebar:active{
-  transform: scale(0.90)
+.snippet{
+  margin: auto;
+  padding: 1rem;
 }
 .avatar{
   margin:1rem;
@@ -102,15 +124,15 @@
   padding:1rem;
   background-color: #ffffff;
 }
-.avatar-img1{
+.avatar-small{
   height:3rem;
   width:3rem;
 }
-.avatar-img2{
+.avatar-medium{
   height:4rem;
   width:4rem;
 }
-.avatar-img3{
+.avatar-large{
   height:5rem;
   width:5rem;
 }

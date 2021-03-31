@@ -9,7 +9,7 @@
   --index1 : 1 ;
 }
 .body-main{
-  display: flex;
+  display: block;
   justify-content: center;
   margin: 0rem;
   margin-top: 4rem;
@@ -61,14 +61,13 @@
 }
 .sidebar{
   display: none;
-  z-index: 3;
-  height: auto;
-  width: auto;
+  position: sticky;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
   padding: 0rem;
   margin: 0rem;
   background-color: #ffffff;
-  margin-left: 0rem;
-  left: 0rem;
   border: 1px solid black;
 }
 .side-comps{
@@ -96,6 +95,9 @@
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
+  position: absolute;
+  top: auto;
+  left: 0rem;
 }
 .btn-sidebar{
   margin: 0.5rem 1rem;
