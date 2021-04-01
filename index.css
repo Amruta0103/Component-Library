@@ -8,16 +8,9 @@
   --new-tag: #1f65ff;
   --index1 : 1 ;
 }
-/* 426, 520 */
-@media(min-width:426px){
-  :root{
-    margin: 0rem 1rem;
-  } 
-}
-
 .body-main{
   margin: 0rem;
-  margin-top: 15rem;
+  margin-top: 10rem;
   width: 100%;
   text-align: center;
   background-color: var(--bgcol);
@@ -51,11 +44,16 @@
   justify-content: center;
   align-items: center;
 }
-.all-comp-inside{
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.intro{
+  font-size: xx-large;
+  max-width: 750px;
+  margin: auto auto 5rem auto;
+}
+.highlighter{
+  background-color: #ffffff;
+  padding: 0rem 0.5rem;
+  border-radius: 2rem;
+  box-shadow: 0.3rem 0.3rem rgb(0,0,0,0.3);
 }
 .btn-div{
   margin:auto;
@@ -67,12 +65,15 @@
   background-color: var(--button-col);
   border: 5px solid var(--button-col);
   border-radius: 3rem;
-  box-shadow: 0.3rem 0.3rem rgb(0,0,0,0.3);
+  box-shadow: 0.3rem 0.3rem rgb(0,0,0,0.2);
   outline: none;
   transition: 0.5s;
 }
 .btn:active{
-  transform: scale(0.90)
+  transform: scale(0.90);
+}
+.btn:hover{
+  cursor: pointer;
 }
 .btn-primary{
   margin: 0.5rem 0.5rem;

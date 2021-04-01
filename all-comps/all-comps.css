@@ -18,6 +18,7 @@
   background-color: var(--bgcol);
   color: var(--text-col);
   text-decoration: solid;
+  text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
 }
 .navbar{
@@ -61,6 +62,7 @@
   list-style: none;
   padding-inline-start: 0rem;
   padding:0.5rem;
+  margin-top: 0.3rem;
 }
 .side-btn-div{
   margin: 0rem;
@@ -86,6 +88,9 @@
 }
 .btn-sidebar:active{
   transform: scale(0.90)
+}
+.btn-sidebar:hover{
+  cursor: pointer;
 }
 .float-btn-div{
   position: fixed;
