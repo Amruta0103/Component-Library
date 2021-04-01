@@ -99,11 +99,17 @@
   </div>
   <div class="all-comp-inside">
     <h1>Buttons</h1>
+    <iframe
+      src="https://carbon.now.sh/embed?bg=rgba%28253%2C203%2C190%2C1%29&t=one-light&wt=none&l=css&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13px&lh=131%25&si=false&es=2x&wm=false&code=.btn%257B%250A%2520%2520margin%253A%25201rem%253B%250A%2520%2520color%253A%2520white%253B%250A%2520%2520background-color%253A%2520var%28--button-col%29%253B%250A%2520%2520border%253A%25205px%2520solid%2520var%28--button-col%29%253B%250A%2520%2520border-radius%253A%25203rem%253B%250A%2520%2520box-shadow%253A%25200.3rem%25200.3rem%2520rgb%280%252C0%252C0%252C0.3%29%253B%250A%2520%2520outline%253A%2520none%253B%250A%2520%2520transition%253A%25200.5s%253B%250A%257D%250A.btn%253Aactive%257B%250A%2520%2520transform%253A%2520scale%280.90%29%250A%257D%250A%252F*%2520var%28--button-col%29%2520is%2520derived%2520%250Afrom%2520the%2520root%2520class%2520*%252F"
+      style="margin: 1rem ;width: 374px; height: 329px; border:0; transform: scale(1); overflow:hidden;"
+      sandbox="allow-scripts allow-same-origin">
+    </iframe>
     <div class="element-snippet">
       <div>
         <h4>Sample</h4>
         <div class="all-buttons">
-          <button class="btn btn-primary">primary</button>
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-primary">Click Me</button>
           <button class="btn btn-primary" src="/">link</button>
         </div>
       </div>
@@ -111,28 +117,75 @@
         <h4>Code</h4>
         <iframe
           src="https://carbon.now.sh/embed?bg=rgba%28253%2C203%2C190%2C1%29&t=one-light&wt=none&l=css&ds=false&dsyoff=20px&dsblur=42px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=14.5px&lh=141%25&si=false&es=2x&wm=false&code=.btn-primary%257B%250A%2520%2520height%253A%25203rem%253B%250A%2520%2520width%253A%25206rem%253B%250A%257D"
-          style="width: 187px; height: 154px; border:0; transform: scale(1); overflow:hidden;"
+          style="margin: 1rem ;width: 187px; height: 154px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="note">
+          Note:<br>
+          For the link button , an Anchor tag should be added, and you are good to go!
+        </div>
+      </div>
+    </div>
+    <div class="element-snippet">
+      <div>
+        <h4>Sample</h4>
+        <div class="all-buttons">
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn btn-secondary">Click Me</button>
+        </div>
+      </div>
+      <div class="snippet">
+        <h4>Code</h4>
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28253%2C203%2C190%2C1%29&t=one-light&wt=none&l=css&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13px&lh=131%25&si=false&es=2x&wm=false&code=.btn-secondary%257B%250A%2520%2520color%253A%2520var%28--button-col%29%253B%250A%2520%2520background-color%253A%2520%2523ffffff%253B%250A%2520%2520height%253A%25203rem%253B%250A%2520%2520width%253A%25206rem%253B%250A%257D%250A%252F*%2520var%28--button-col%29%2520is%2520%250Aderived%2520from%2520the%2520root%2520class%2520*%252F%2520"
+        style="margin: 1rem ;width: 288px; height: 210px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+      </div>
+    </div>
+    <div class="element-snippet">
+      <div>
+        <h4>Sample</h4>
+        <div class="all-buttons">
+          <button class="btn icon-btn-size">
+            <img class="icon-svg" src="/icon-btn/home-solid.svg"></img>
+          </button>
+          <button class="btn icon-btn-size">
+            <img class="icon-svg" src="/icon-btn/edit-solid.svg"></img>
+          </button>
+        </div>
+      </div>
+      <div class="snippet">
+        <h4>Code</h4>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28253%2C203%2C190%2C1%29&t=one-light&wt=none&l=css&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13px&lh=131%25&si=false&es=2x&wm=false&code=.icon-btn-size%257B%250A%2520%2520height%253A50px%253B%250A%2520%2520width%253A50px%253B%250A%257D%250A.icon-svg%257B%250A%2520%2520height%253A30px%253B%250A%2520%2520width%253A30px%253B%250A%257D"
+          style="margin: 1rem ;width: 174px; height: 210px; border:0; transform: scale(1); overflow:hidden;"
           sandbox="allow-scripts allow-same-origin">
         </iframe>
       </div>
     </div>
-    
-    <div>
-      <button class="btn btn-secondary">secondary</button>
-    </div>
-    <div class="all-buttons">
-      <button class="btn icon-btn-size"><img class="icon-svg" src="/icon-btn/home-solid.svg"></img></button>
-      <button class="btn icon-btn-size">
-        <img class="icon-svg" src="/icon-btn/edit-solid.svg"></img>
-      </button>
-      <button class="btn btn-icon-text">
-        <img class="text-btn-icon" src="/icon-btn/save-solid.svg"></img>&nbsp;
-        <h3>SAVE</h3>
-      </button>
-      <button class="btn btn-icon-text">
-        <img class="text-btn-icon" src="/icon-btn/share-alt-square-solid.svg"></img>&nbsp;
-        <h3>SHARE</h3>
-      </button>
+    <div class="element-snippet">
+      <div>
+        <h4>Sample</h4>
+        <div class="all-buttons">
+          <button class="btn btn-icon-text">
+            <img class="text-btn-icon" src="/icon-btn/save-solid.svg"></img>&nbsp;
+            <h3>SAVE</h3>
+          </button>
+          <button class="btn btn-icon-text">
+            <img class="text-btn-icon" src="/icon-btn/share-alt-square-solid.svg"></img>&nbsp;
+            <h3>SHARE</h3>
+          </button>
+        </div>
+      </div>
+      <div class="snippet">
+        <h4>Code</h4>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28253%2C203%2C190%2C1%29&t=one-light&wt=none&l=css&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=dm&fs=13px&lh=131%25&si=false&es=2x&wm=false&code=.btn-icon-text%257B%250A%2520%2520height%253A%252040px%253B%250A%2520%2520width%253A%2520100px%253B%250A%2520%2520box-shadow%253A%2520none%253B%250A%2520%2520display%253A%2520inline-flex%253B%250A%2520%2520align-items%253A%2520center%253B%250A%257D%250A.text-btn-icon%257B%250A%2520%2520height%253A%252020px%253B%250A%2520%2520width%253A20px%253B%250A%257D"
+          style="margin: 1rem ;width: 232px; height: 261px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
     </div>
   </div>
 </body>
