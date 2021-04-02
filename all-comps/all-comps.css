@@ -118,6 +118,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 1rem;
 }
 .snippet{
   margin: 0rem;
@@ -232,10 +233,12 @@
   box-shadow: none;
   display: inline-flex;
   align-items: center;
+  padding: 0.1rem;
 }
 .text-btn-icon{
   height: 20px;
   width:20px;
+  margin: 0.2rem;
 }
 .link{
   text-decoration: none;
@@ -467,7 +470,7 @@
   margin: 0rem;
 }
 .modal{
-  background-color: var(--component-color);
+  background-color: var(--card-col);
   height: 300px;
   width:200px;
   text-align: center;
@@ -505,7 +508,6 @@
 }
 .all-text{
   text-align: left;
-  padding: 1rem;
   width: 300px
 }
 .text-grey{
@@ -515,10 +517,13 @@
 }
 .text-left{
   text-align: left;
+  margin: 1rem;
 }
 .text-center{
   text-align: center;
+  margin: 1rem;
 }
 .text-right{
   text-align: right;
+  margin: 1rem;
 }
