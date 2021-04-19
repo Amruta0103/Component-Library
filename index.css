@@ -46,6 +46,7 @@
   align-items: center;
 }
 .intro{
+  font-family: 'Truculenta', sans-serif;
   font-size: xx-large;
   max-width: 750px;
   margin: auto auto 2rem auto;
@@ -53,8 +54,7 @@
 .highlighter{
   background-color: #ffffff;
   padding: 0rem 0.5rem;
-  border-radius: 2rem;
-  box-shadow: 0.3rem 0.3rem rgb(0,0,0,0.3);
+  border-radius: 0.3rem;
 }
 .intro-btns{
   display: flex;
@@ -70,7 +70,7 @@
   background-color: var(--button-col);
   border: 5px solid var(--button-col);
   border-radius: 3rem;
-  box-shadow: 0.3rem 0.3rem rgb(0,0,0,0.2);
+  box-shadow: 0.2rem 0.2rem rgb(0,0,0,0.2);
   outline: none;
   transition: 0.5s;
 }
@@ -82,22 +82,32 @@
 }
 .btn-primary{
   margin: 0.5rem 0.5rem;
-  height: 3rem;
-  width: 6rem;
+  height: 4rem;
+  width: 10rem;
+  font-size: 1.5rem;
 }
 .link{
   text-decoration: none;
   margin: auto;
 }
 .footer{
+  display: flex;
+  justify-content: center;
   background-color: #ffffff;
   position: fixed;
   bottom: 0rem;
   left: 0rem;
-  padding: 1rem auto;
+  padding: 1rem;
   width: 100%;
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 400;
+}
+.connect{
+  margin: auto 1rem;
+  height: fit-content;
+}
+.made-by{
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: auto 1rem;
   font-size: larger;
 }
 .footer-icons{

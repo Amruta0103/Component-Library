@@ -141,11 +141,14 @@
   margin-left: 9rem;
   width: 100%;
 }
+.sub-headings{
+  text-decoration: overline underline;
+}
 .element-snippet{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 .snippet{
   margin: 0rem;
@@ -180,12 +183,12 @@
   width:5rem;
 }
 .all-alerts{
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin: 1rem auto;
 }
 .alert{
-  margin: 1rem;
+  margin: 1rem auto;
   padding: 1.5rem;
   height: fit-content;
   text-align: center;
@@ -229,7 +232,7 @@
   background-color: var(--button-col);
   border: 5px solid var(--button-col);
   border-radius: 3rem;
-  box-shadow: 0.3rem 0.3rem rgb(0,0,0,0.3);
+  box-shadow: 0.2rem 0.2rem rgb(0,0,0,0.3);
   outline: none;
   transition: 0.5s;
 }
@@ -257,7 +260,6 @@
 .btn-icon-text{
   height: 40px;
   width: 100px;
-  box-shadow: none;
   display: inline-flex;
   align-items: center;
   padding: 0.1rem;
