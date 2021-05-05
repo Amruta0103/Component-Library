@@ -415,7 +415,7 @@
 }
 .card-shadow{
   margin: 0rem;
-  box-shadow: 0.5rem 0.5rem rgb(0 ,0 ,0 ,0.7);
+  box-shadow: 0.3rem 0.3rem rgb(0 ,0 ,0 ,0.3);
 }
 .card-horizontal{
   margin: 0.5rem;
